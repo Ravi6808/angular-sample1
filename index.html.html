@@ -1,0 +1,29 @@
+<!Doctype html>
+<html ng-app="myApp">
+    <head>
+        <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="project1.js"></script>
+    </head>
+    <body>
+        <div ng-controller="myCont1">
+            <p>Controller 1</p>
+            <p>Name 1 :<input type="text" ng-model="name" placeholder="Enter in the box"></p>
+            RootScope : {{rootScope}}<br>
+            MyCont1 Scope : {{name}}<br>
+            MyCont2 Scope : {{name1}}<br>
+            <p style="color: Red">MyCont2 Scope is Undefined</p>
+        </div>
+        <hr>
+        <div ng-controller="myCont2">
+            <p>Controller 2</p>
+            <p> Name 2 :<input type="text" ng-model="name1"placeholder="Enter in the box"> </p>
+            RootScope : {{rootScope}}<br>
+            MyCont1 Scope : {{name}}<br>
+            MyCont2 Scope : {{name1}}<br>
+            <p style="color: Red">MyCont1 Scope is Undefined</p>
+
+
+        </div>
+    </body>
+</html>
